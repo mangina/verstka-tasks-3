@@ -1,0 +1,46 @@
+.scoreboard {
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    position: relative;
+}
+
+.scoreboard__head {
+    padding: 0 10px;
+}
+
+.scoreboard__border,
+.scoreboard__form {
+    text-align: center;
+}
+
+.scoreboard__border,
+.scoreboard__border:hover:after {
+    width: 200px;
+}
+
+.scoreboard__border:hover {
+    background: #ffc;
+}
+
+.scoreboard__line {
+    background: #FF7552;
+}
+
+.scoreboard__line:nth-child(odd) {
+    background: #F63552;
+}
+
+.scoreboard__line:hover {
+    background: khaki;
+}
+
+.scoreboard__border:hover:after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background: #cfc !important;
+    z-index: -1 !important;
+}
