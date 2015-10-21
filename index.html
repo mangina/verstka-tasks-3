@@ -8,7 +8,7 @@
     <body>
         <!-- Поле для фильтрации по городу -->
         <form class="filter">
-            <div class="scoreboard__form__title">Фильтр по данным:</div>
+            <div class="scoreboard-form-title">Фильтр по данным:</div>
             <input
                 type="text"
                 placeholder="Город отправления"
@@ -20,190 +20,225 @@
         <table class="scoreboard">
             <thead>
                 <tr>
-                    <th class="scoreboard__head">Тип рейс</th>
-                    <th class="scoreboard__head">Номер рейса</th>
-                    <th class="scoreboard__head">Авиакомпания</th>
-                    <th class="scoreboard__head">Логотип авиакомпании</th>
-                    <th class="scoreboard__head">Тип поздушного судна</th>
-                    <th class="scoreboard__head">Аэропорт назначения</th>
-                    <th class="scoreboard__head">Плановое время вылета</th>
-                    <th class="scoreboard__head">Статус рейса</th>
-                    <th class="scoreboard__head">Номер терминала</th>
+                    <th class="scoreboard-head">Тип рейс</th>
+                    <th class="scoreboard-head">Номер рейса</th>
+                    <th class="scoreboard-head">Авиакомпания</th>
+                    <th class="scoreboard-head">Логотип авиакомпании</th>
+                    <th class="scoreboard-head">Тип поздушного судна</th>
+                    <th class="scoreboard-head">Аэропорт назначения</th>
+                    <th class="scoreboard-head">Плановое время вылета</th>
+                    <th class="scoreboard-head">Номер терминала</th>
+                    <th class="scoreboard-head">Статус рейса</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">4430</td>
-                    <td class="scoreboard__border">Эйр Франс</td>
-                    <td class="scoreboard__border"><img src="img/airfrance.png" /></td>
-                    <td class="scoreboard__border">А-321</td>
-                    <td class="scoreboard__border">Кольцово</td>
-                    <td class="scoreboard__border">20.10 00:05</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">4430</td>
+                    <td class="scoreboard-cell">Эйр Франс</td>
+                    <td class="scoreboard-cell"><img src="img/airfrance.png"></td>
+                    <td class="scoreboard-cell">А-321</td>
+                    <td class="scoreboard-cell">Кольцово</td>
+                    <td class="scoreboard-cell">20.10 00:05</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Отменен</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">4964</td>
-                    <td class="scoreboard__border">Эйр Франс</td>
-                    <td class="scoreboard__border"><img src="img/airfrance.png" /></td>
-                    <td class="scoreboard__border">А-320</td>
-                    <td class="scoreboard__border">Баландино</td>
-                    <td class="scoreboard__border">20.10 00:21</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Регистрация</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">4964</td>
+                    <td class="scoreboard-cell">Эйр Франс</td>
+                    <td class="scoreboard-cell"><img src="img/airfrance.png"></td>
+                    <td class="scoreboard-cell">А-320</td>
+                    <td class="scoreboard-cell">Баландино</td>
+                    <td class="scoreboard-cell">20.10 00:21</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Летит</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
-                    <td class="scoreboard__border">8153</td>
-                    <td class="scoreboard__border">Эйр Сербиа</td>
-                    <td class="scoreboard__border"><img src="img/airserbia.png" /></td>
-                    <td class="scoreboard__border">А-321</td>
-                    <td class="scoreboard__border">Шереметьево</td>
-                    <td class="scoreboard__border">20.10 02:00</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/dep.png" height="50" width="50" alt="Вылет">
+                    </td>
+                    <td class="scoreboard-cell">8153</td>
+                    <td class="scoreboard-cell">Эйр Сербиа</td>
+                    <td class="scoreboard-cell"><img src="img/airserbia.png"></td>
+                    <td class="scoreboard-cell">А-321</td>
+                    <td class="scoreboard-cell">Шереметьево</td>
+                    <td class="scoreboard-cell">20.10 02:00</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Ожидание посадки</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
-                    <td class="scoreboard__border">2901</td>
-                    <td class="scoreboard__border">КЛМ</td>
-                    <td class="scoreboard__border"><img src="img/klml.png" /></td>
-                    <td class="scoreboard__border">А-319</td>
-                    <td class="scoreboard__border">Пашковский</td>
-                    <td class="scoreboard__border">23.10 23:35</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Регистрация</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/dep.png" height="50" width="50" alt="Вылет">
+                    </td>
+                    <td class="scoreboard-cell">2901</td>
+                    <td class="scoreboard-cell">КЛМ</td>
+                    <td class="scoreboard-cell"><img src="img/klml.png"></td>
+                    <td class="scoreboard-cell">А-319</td>
+                    <td class="scoreboard-cell">Пашковский</td>
+                    <td class="scoreboard-cell">23.10 23:35</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Регистрация</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">2942</td>
-                    <td class="scoreboard__border">КЛМ</td>
-                    <td class="scoreboard__border"><img src="img/klml.png" /></td>
-                    <td class="scoreboard__border">А-320</td>
-                    <td class="scoreboard__border">Баландино</td>
-                    <td class="scoreboard__border">21.10 22:05</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">2942</td>
+                    <td class="scoreboard-cell">КЛМ</td>
+                    <td class="scoreboard-cell"><img src="img/klml.png"></td>
+                    <td class="scoreboard-cell">А-320</td>
+                    <td class="scoreboard-cell">Баландино</td>
+                    <td class="scoreboard-cell">21.10 22:05</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Приземлился</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
-                    <td class="scoreboard__border">3234</td>
-                    <td class="scoreboard__border">КЛМ</td>
-                    <td class="scoreboard__border"><img src="img/klml.png" /></td>
-                    <td class="scoreboard__border">А-321</td>
-                    <td class="scoreboard__border">Кольцово</td>
-                    <td class="scoreboard__border">21.10 23:40</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Регистрация</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/dep.png" height="50" width="50" alt="Вылет">
+                    </td>
+                    <td class="scoreboard-cell">3234</td>
+                    <td class="scoreboard-cell">КЛМ</td>
+                    <td class="scoreboard-cell"><img src="img/klml.png"></td>
+                    <td class="scoreboard-cell">А-321</td>
+                    <td class="scoreboard-cell">Кольцово</td>
+                    <td class="scoreboard-cell">21.10 23:40</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Регистрация</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">031</td>
-                    <td class="scoreboard__border">Aэрофлот</td>
-                    <td class="scoreboard__border"><img src="img/aeroflot.png" /></td>
-                    <td class="scoreboard__border">А-320</td>
-                    <td class="scoreboard__border">Шереметьево</td>
-                    <td class="scoreboard__border">22.10 01:56</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">031</td>
+                    <td class="scoreboard-cell">Aэрофлот</td>
+                    <td class="scoreboard-cell"><img src="img/aeroflot.png"></td>
+                    <td class="scoreboard-cell">А-320</td>
+                    <td class="scoreboard-cell">Шереметьево</td>
+                    <td class="scoreboard-cell">22.10 01:56</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">По расписанию</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
-                    <td class="scoreboard__border">1144</td>
-                    <td class="scoreboard__border">Эйр Франс</td>
-                    <td class="scoreboard__border"><img src="img/airfrance.png" /></td>
-                    <td class="scoreboard__border">А-319</td>
-                    <td class="scoreboard__border">Шереметьево</td>
-                    <td class="scoreboard__border">22.10 00:26</td>
-                    <td class="scoreboard__border">E</td>
-                    <td class="scoreboard__border">Регистрация</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/dep.png" height="50" width="50" alt="Вылет">
+                    </td>
+                    <td class="scoreboard-cell">1144</td>
+                    <td class="scoreboard-cell">Эйр Франс</td>
+                    <td class="scoreboard-cell"><img src="img/airfrance.png"></td>
+                    <td class="scoreboard-cell">А-319</td>
+                    <td class="scoreboard-cell">Шереметьево</td>
+                    <td class="scoreboard-cell">22.10 00:26</td>
+                    <td class="scoreboard-cell">E</td>
+                    <td class="scoreboard-cell">Вылетел</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">2930</td>
-                    <td class="scoreboard__border">КЛМ</td>
-                    <td class="scoreboard__border"><img src="img/klml.png" /></td>
-                    <td class="scoreboard__border">А-320</td>
-                    <td class="scoreboard__border">Гейдар Алиев</td>
-                    <td class="scoreboard__border">23.10 03:15</td>
-                    <td class="scoreboard__border">F</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">2930</td>
+                    <td class="scoreboard-cell">КЛМ</td>
+                    <td class="scoreboard-cell"><img src="img/klml.png"></td>
+                    <td class="scoreboard-cell">А-320</td>
+                    <td class="scoreboard-cell">Гейдар Алиев</td>
+                    <td class="scoreboard-cell">23.10 03:15</td>
+                    <td class="scoreboard-cell">F</td>
+                    <td class="scoreboard-cell">Задерживаеться до 04:00</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">1852</td>
-                    <td class="scoreboard__border">Аэрофлот</td>
-                    <td class="scoreboard__border"><img src="img/aeroflot.png" /></td>
-                    <td class="scoreboard__border">А-320</td>
-                    <td class="scoreboard__border">Гейдар Алиев</td>
-                    <td class="scoreboard__border">24.10 04:39</td>
-                    <td class="scoreboard__border">F</td>
-                    <td class="scoreboard__border">Регистрация</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">1852</td>
+                    <td class="scoreboard-cell">Аэрофлот</td>
+                    <td class="scoreboard-cell"><img src="img/aeroflot.png"></td>
+                    <td class="scoreboard-cell">А-320</td>
+                    <td class="scoreboard-cell">Гейдар Алиев</td>
+                    <td class="scoreboard-cell">24.10 04:39</td>
+                    <td class="scoreboard-cell">F</td>
+                    <td class="scoreboard-cell">Летит</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">2317</td>
-                    <td class="scoreboard__border">Aэрофлот</td>
-                    <td class="scoreboard__border"><img src="img/aeroflot.png" /></td>
-                    <td class="scoreboard__border">А-320</td>
-                    <td class="scoreboard__border">Шереметьево</td>
-                    <td class="scoreboard__border">24.10 00:02</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">2317</td>
+                    <td class="scoreboard-cell">Aэрофлот</td>
+                    <td class="scoreboard-cell"><img src="img/aeroflot.png"></td>
+                    <td class="scoreboard-cell">А-320</td>
+                    <td class="scoreboard-cell">Шереметьево</td>
+                    <td class="scoreboard-cell">24.10 00:02</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">По расписанию</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
-                    <td class="scoreboard__border">4451</td>
-                    <td class="scoreboard__border">Aэрофлот</td>
-                    <td class="scoreboard__border"><img src="img/aeroflot.png" /></td>
-                    <td class="scoreboard__border">А-319</td>
-                    <td class="scoreboard__border">Шереметьево</td>
-                    <td class="scoreboard__border">24.10 09:20</td>
-                    <td class="scoreboard__border">E</td>
-                    <td class="scoreboard__border">Регистрация</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/dep.png" height="50" width="50" alt="Вылет">
+                    </td>
+                    <td class="scoreboard-cell">4451</td>
+                    <td class="scoreboard-cell">Aэрофлот</td>
+                    <td class="scoreboard-cell"><img src="img/aeroflot.png"></td>
+                    <td class="scoreboard-cell">А-319</td>
+                    <td class="scoreboard-cell">Шереметьево</td>
+                    <td class="scoreboard-cell">24.10 09:20</td>
+                    <td class="scoreboard-cell">E</td>
+                    <td class="scoreboard-cell">Посадка закончена</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">4892</td>
-                    <td class="scoreboard__border">Эйр Франс</td>
-                    <td class="scoreboard__border"><img src="img/airfrance.png" /></td>
-                    <td class="scoreboard__border">A-330-300</td>
-                    <td class="scoreboard__border">Емельяново</td>
-                    <td class="scoreboard__border">25.10 02:03</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">4892</td>
+                    <td class="scoreboard-cell">Эйр Франс</td>
+                    <td class="scoreboard-cell"><img src="img/airfrance.png"></td>
+                    <td class="scoreboard-cell">A-330-300</td>
+                    <td class="scoreboard-cell">Емельяново</td>
+                    <td class="scoreboard-cell">25.10 02:03</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Приземлился</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
-                    <td class="scoreboard__border">2113</td>
-                    <td class="scoreboard__border">Аэрофлот</td>
-                    <td class="scoreboard__border"><img src="img/aeroflot.png" /></td>
-                    <td class="scoreboard__border">Боинг-737-800</td>
-                    <td class="scoreboard__border">Шереметьево</td>
-                    <td class="scoreboard__border">25.10 07:47</td>
-                    <td class="scoreboard__border">F</td>
-                    <td class="scoreboard__border">Регистрация</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/dep.png" height="50" width="50" alt="Вылет">
+                    </td>
+                    <td class="scoreboard-cell">2113</td>
+                    <td class="scoreboard-cell">Аэрофлот</td>
+                    <td class="scoreboard-cell"><img src="img/aeroflot.png"></td>
+                    <td class="scoreboard-cell">Боинг-737-800</td>
+                    <td class="scoreboard-cell">Шереметьево</td>
+                    <td class="scoreboard-cell">25.10 07:47</td>
+                    <td class="scoreboard-cell">F</td>
+                    <td class="scoreboard-cell">Регистрация</td>
                 </tr>
-                <tr class="scoreboard__line">
-                    <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
-                    <td class="scoreboard__border">3183</td>
-                    <td class="scoreboard__border">КЛМ</td>
-                    <td class="scoreboard__border"><img src="img/klml.png" /></td>
-                    <td class="scoreboard__border">А-320</td>
-                    <td class="scoreboard__border">Шереметьево</td>
-                    <td class="scoreboard__border">22.10 04:22</td>
-                    <td class="scoreboard__border">D</td>
-                    <td class="scoreboard__border">Ожидание посадки</td>
+                <tr class="scoreboard-line">
+                    <td class="scoreboard-cell">
+                        <img src="img/lan.png" height="50" width="50" alt="Прилет">
+                    </td>
+                    <td class="scoreboard-cell">3183</td>
+                    <td class="scoreboard-cell">КЛМ</td>
+                    <td class="scoreboard-cell"><img src="img/klml.png"></td>
+                    <td class="scoreboard-cell">А-320</td>
+                    <td class="scoreboard-cell">Шереметьево</td>
+                    <td class="scoreboard-cell">22.10 04:22</td>
+                    <td class="scoreboard-cell">D</td>
+                    <td class="scoreboard-cell">Отменен</td>
                 </tr>
             </tbody>
         </table>
-        <form class="scoreboard__form" method="post">
-            <div class="scoreboard__form__title">Форма для отправки данных:</div>
-            <input type="tel" placeholder="Номер телефона(78928765432)" value="" pattern="^((\+)?(\d{1,3})[\- ]?)?(\(\d{3}\)[\- ]?|(\d{3})[\- ]?)[\d\- ]{7,10}" required><br>
+        <form class="scoreboard-form" method="post">
+            <div class="scoreboard-form-title">Форма для отправки данных:</div>
+            <input
+                type="tel"
+                placeholder="Номер телефона"
+                value=""
+                pattern="^((\+)?(\d{1,3})[\- ]?)?(\(\d{3}\)[\- ]?|(\d{3})[\- ]?)[\d\- ]{7,10}"
+                required><br>
             <input type="email" placeholder="Электронная почта" value="" required><br>
-            <button type="submit" class="scoreboard__form__button">Отправить данные о рейсе на телефон</button>
+            <button type="submit" class="scoreboard-form-button">Отправить данные о рейсе на телефон</button>
         </form>
     </body>
 </html>

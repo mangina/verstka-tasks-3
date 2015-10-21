@@ -1,26 +1,31 @@
-.scoreboard {
+.scoreboard
+{
     margin: 15px auto;
     border: 1px solid #aaa;
     border-collapse: collapse;
     overflow: hidden;
 }
 
-.scoreboard__head {
+.scoreboard-head
+{
     padding: 0 10px;
 }
 
-.scoreboard__border,
-.scoreboard__form,
-.filter {
+.scoreboard-cell,
+.scoreboard-form,
+.filter
+{
     text-align: center;
 }
 
-.scoreboard__border,
-.scoreboard__head {
+.scoreboard-cell,
+.scoreboard-head
+{
     position: relative;
 }
 
-.scoreboard__line:nth-child(odd) .scoreboard__border:before {
+.scoreboard-line:nth-child(odd) .scoreboard-cell:before
+{
     content: "";
     background: #F63552;
     height: 100%;
@@ -31,36 +36,41 @@
     z-index: -2;
 }
 
-.scoreboard__form__title {
+.scoreboard-form-title
+{
     margin: 0 0 10px;
     font-size: 18px;
 }
 
-.scoreboard__line:hover {
+.scoreboard-line:hover
+{
     background: khaki;
 }
 
-.scoreboard__border:hover::after {
+.scoreboard-cell:hover::after
+{
     content: '';
     display: block;
     position: absolute;
     top: -1000px;
     bottom: 0;
     background: #cfc ;
-    margin: 10px;
     z-index: -1;
     height: 10000px;
     width: 100%;
 }
 
-input:valid {
+input:valid
+{
     background-color: #ddffdd;
 }
 
-.scoreboard__form:invalid .scoreboard__form__button{
+.scoreboard-form:invalid .scoreboard-form-button
+{
     display: none;
 }
 
-.scoreboard__form:valid .scoreboard__form__button{
+.scoreboard-form:valid .scoreboard-form-button
+{
     display: inline;
 }
