@@ -1,8 +1,8 @@
 .scoreboard {
-    margin: 0 auto;
+    margin: 15px auto;
     border: 1px solid #aaa;
     border-collapse: collapse;
-    position: relative;
+    overflow: hidden;
 }
 
 .scoreboard__head {
@@ -10,37 +10,57 @@
 }
 
 .scoreboard__border,
-.scoreboard__form {
+.scoreboard__form,
+.filter {
     text-align: center;
 }
 
 .scoreboard__border,
-.scoreboard__border:hover:after {
-    width: 200px;
+.scoreboard__head {
+    position: relative;
 }
 
-.scoreboard__border:hover {
-    background: #ffc;
-}
-
-.scoreboard__line {
-    background: #FF7552;
-}
-
-.scoreboard__line:nth-child(odd) {
+.scoreboard__line:nth-child(odd) .scoreboard__border:before {
+    content: "";
     background: #F63552;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+
+.scoreboard__form__title {
+    margin: 0 0 10px;
+    font-size: 18px;
 }
 
 .scoreboard__line:hover {
     background: khaki;
 }
 
-.scoreboard__border:hover:after {
-    content: '' !important;
-    display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    background: #cfc !important;
-    z-index: -1 !important;
+.scoreboard__border:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1000px;
+    bottom: 0;
+    background: #cfc ;
+    margin: 10px;
+    z-index: -1;
+    height: 10000px;
+    width: 100%;
+}
+
+input:valid {
+    background-color: #ddffdd;
+}
+
+.scoreboard__form:invalid .scoreboard__form__button{
+    display: none;
+}
+
+.scoreboard__form:valid .scoreboard__form__button{
+    display: inline;
 }

@@ -7,11 +7,15 @@
     </head>
     <body>
         <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
+        <form class="filter">
+            <div class="scoreboard__form__title">Фильтр по данным:</div>
+            <input
+                type="text"
+                placeholder="Город отправления"
+                value=""
+                onkeyup="this.setAttribute('value', this.value)"
+                required>
+        </form>
 
         <table class="scoreboard">
             <thead>
@@ -196,9 +200,10 @@
             </tbody>
         </table>
         <form class="scoreboard__form" method="post">
-            <input type="tel" placeholder="Номер телефона(78928765432)" value="" pattern="^((\+)?(\d{1,3})[\- ]?)?(\(\d{3}\)[\- ]?|(\d{3})[\- ]?)[\d\- ]{7,10}"><br>
-            <input type="email" placeholder="Электронная почта" value=""><br>
-            <button type="submit">Отправить данные о рейсе на телефон</button>
+            <div class="scoreboard__form__title">Форма для отправки данных:</div>
+            <input type="tel" placeholder="Номер телефона(78928765432)" value="" pattern="^((\+)?(\d{1,3})[\- ]?)?(\(\d{3}\)[\- ]?|(\d{3})[\- ]?)[\d\- ]{7,10}" required><br>
+            <input type="email" placeholder="Электронная почта" value="" required><br>
+            <button type="submit" class="scoreboard__form__button">Отправить данные о рейсе на телефон</button>
         </form>
     </body>
 </html>
