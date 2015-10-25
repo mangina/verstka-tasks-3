@@ -7,15 +7,19 @@
     </head>
     <body>
         <!-- Поле для фильтрации по городу -->
-        <form class="filter">
-            <div class="scoreboard-form-title">Фильтр по данным:</div>
-            <input
-                type="text"
-                placeholder="Город отправления"
-                value=""
-                onkeyup="this.setAttribute('value', this.value)"
-                required>
-        </form>
+
+        <div class="scoreboard-form-title filter">Фильтр по данным:</div>
+        <input
+            type="text"
+            placeholder="Город отправления"
+            value=""
+            onkeyup="this.setAttribute('value', this.value)"
+            required>
+        <input type="checkbox" class="status-departure" checked>Отправление
+        <input type="checkbox" class="status-arrival" checked>Прибытие
+        <input type="checkbox" class="status-d">D
+        <input type="checkbox" class="status-e">E
+        <input type="checkbox" class="status-f">F
 
         <table class="scoreboard">
             <thead>
@@ -32,7 +36,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -45,7 +49,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">Отменен</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -58,7 +62,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">Летит</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line departure terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/dep.png" height="50" width="50" alt="Вылет">
                     </td>
@@ -71,7 +75,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">Ожидание посадки</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line departure terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/dep.png" height="50" width="50" alt="Вылет">
                     </td>
@@ -84,7 +88,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">Регистрация</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -97,7 +101,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">Приземлился</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line departure terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/dep.png" height="50" width="50" alt="Вылет">
                     </td>
@@ -110,7 +114,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">Регистрация</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -123,7 +127,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">По расписанию</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line departure terminal-e">
                     <td class="scoreboard-cell">
                         <img src="img/dep.png" height="50" width="50" alt="Вылет">
                     </td>
@@ -136,7 +140,7 @@
                     <td class="scoreboard-cell">E</td>
                     <td class="scoreboard-cell">Вылетел</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-f">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -149,7 +153,7 @@
                     <td class="scoreboard-cell">F</td>
                     <td class="scoreboard-cell">Задерживаеться до 04:00</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-f">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -162,7 +166,7 @@
                     <td class="scoreboard-cell">F</td>
                     <td class="scoreboard-cell">Летит</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -175,7 +179,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">По расписанию</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line departure terminal-e">
                     <td class="scoreboard-cell">
                         <img src="img/dep.png" height="50" width="50" alt="Вылет">
                     </td>
@@ -188,7 +192,7 @@
                     <td class="scoreboard-cell">E</td>
                     <td class="scoreboard-cell">Посадка закончена</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>
@@ -201,7 +205,7 @@
                     <td class="scoreboard-cell">D</td>
                     <td class="scoreboard-cell">Приземлился</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line departure terminal-f">
                     <td class="scoreboard-cell">
                         <img src="img/dep.png" height="50" width="50" alt="Вылет">
                     </td>
@@ -214,7 +218,7 @@
                     <td class="scoreboard-cell">F</td>
                     <td class="scoreboard-cell">Регистрация</td>
                 </tr>
-                <tr class="scoreboard-line">
+                <tr class="scoreboard-line arrival terminal-d">
                     <td class="scoreboard-cell">
                         <img src="img/lan.png" height="50" width="50" alt="Прилет">
                     </td>

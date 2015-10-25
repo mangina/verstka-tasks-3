@@ -74,3 +74,24 @@ input:valid
 {
     display: inline;
 }
+
+.departure,
+.arrival,
+.terminal-d,
+.terminal-e,
+.terminal-f
+{
+    display: none;
+}
+
+.status-departure:checked ~ * .departure,
+.status-arrival:checked ~ * .arrival,
+.status-d:checked ~ * .terminal-d,
+.status-e:checked ~ * .terminal-e,
+.status-f:checked ~ * .terminal-f
+{
+    display: table-row;
+}
+
+
+
